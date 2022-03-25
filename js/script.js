@@ -11,7 +11,7 @@ var settings = {
 }
 
 $.ajax(settings).done(function (response){
-    btc.innerHTML = response.bitcoin.brl;
-    eth.innerHTML = response.ethereum.brl;
-    sol.innerHTML = response.solana.brl;
+    btc.innerHTML += response.bitcoin.brl;
+    eth.innerHTML += response.ethereum.brl;
+    sol.innerHTML += response.solana.brl;
 });
